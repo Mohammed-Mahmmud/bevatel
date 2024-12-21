@@ -1,0 +1,16 @@
+{
+    "files.trimTrailingWhitespace": true,
+    "files.autoSave": "onFocusChange",
+    "files.autoSaveDelay": 1000, // 1 second delay for auto-save
+    "editor.defaultFormatter": "esbenp.prettier-vscode", // Use Prettier as the default formatter
+    "editor.formatOnSave": true, // Format files on save
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode" // Use Prettier for HTML files
+    },
+    "[blade]": {
+        "editor.defaultFormatter": "shufo.vscode-blade-formatter"
+    },
+    "[php]": {
+        "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+    }
+}

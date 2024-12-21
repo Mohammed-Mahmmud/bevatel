@@ -1,0 +1,93 @@
+<?php
+
+return [
+
+    /*
+    |--------------------------------------------------------------------------
+    | Home Language Lines
+    |--------------------------------------------------------------------------
+    |
+    | The following language lines are used during home for various
+    | messages that we need to display to the user. You are free to modify
+    | these language lines according to your application's requirements.
+    |
+    */
+
+    'Menu'           =>  'Menu',
+    'view-sections'  =>  'View Sections',
+    'company'         =>  'Companies',
+    'companies-view'    =>  'View Companies',
+    'classrooms-view'    =>  'View School Classrooms ',
+    'grades-add'     =>  'Add Grade',
+    'checklist'=>       'Check List' ,
+    'classroom'      =>  'Classroom',
+    'sections'       =>  'Sections',
+    'students'       =>  'Students',
+    'teachers'       =>  'Teachers',
+    'parents'        =>  'Parents',
+    'accounts'       =>  'Accounts',
+    'attendance'     =>  'Attendance',
+    'exams'          =>  'Exams',
+    'library'        =>  'Library',
+    'online_classes' =>  'Online Classes',
+    'settings'       =>  'Settings',
+    'users'          =>  'Users',
+    'Rigs'          =>  'Rigs',
+    'orders'          =>  'Job Ticket',
+    'view_rigs'          =>  'View Rigs',
+    'view_orders'          =>  'view Job Ticket Numbers',
+    'view_jobticket'          =>  'View JobTickets',
+    'create_jobticket'          =>  'Create JobTicket',
+    'mpi'  =>"MPI",
+    'view_mpi'=>'View MPI Reports',
+    'create_mpi'=>'Create MPI Report',
+    'report_type' => 'Report Type',
+    'reports_type_view' => 'View Reports Types',
+
+    'mpiReport'=>'MPI Reports',
+    'wireReports'=>'Wire Reports',
+    'shakleReport'=>'Shakles Reports',
+    'examinationReport'=>'Thorough Examination Reports',
+    'ToolsReports' =>' Tools Reports',
+    'viewWire'=>'View Wire Reports',
+    'viewhSakle'=>'View Shakles Reports',
+    'viewExamination'=>'View Thorough Examination',
+    'shaklesize' => "View Shake Sizes",
+    'createWire'=>'Create Wire Report',
+    'createhSakle'=>'Create Shakles Report',
+    'createExamination'=>'Create Thorough Examination',
+    'viewChecklist' =>' View Check Lists',
+    'viewTools'=> 'View Tools',
+    'createTool'=> 'create Tool',
+    'pinxpin' =>'PIN * PIN',
+    'boxxpin' =>'BOX * PIN',
+    'boxxbox' =>'BOX * BOX',
+    'viewpinxpin' =>'View PIN * PIN',
+    'viewboxxpin' =>'View BOX * PIN',
+    'viewboxxbox' =>'View BOX * BOX',
+    'createpinxpin' =>'Create PIN * PIN',
+    'createboxxpin' =>'Create BOX * PIN',
+    'createboxxbox' =>'Create BOX * BOX',
+    'mudreports' => ' Mud Reports',
+    'jarreports' => ' Jar Reports',
+    'mud-view' =>'View Mud Reports',
+    'mud-create' =>'Create Mud Report',
+    'jar-view' =>'View Jar Reports',
+    'jar-create' =>'Create Jar Report',
+    'tubing' =>'Tubing  ',
+    'tubing-view' =>'View Tubing  Summary',
+    'tubing-create' =>'Create Tubing  Summary',
+    'summary' =>'Summary',
+    'casing' =>'Casing  ',
+    'casing-view' =>'View Casing  Summary',
+    'casing-create' =>'Create Casing Summary ',
+    'create-heavyWeight' => "Create Heavy Weight",
+    'view-heavyWeight' => "View Heavy Weight",
+    'create-drillPipe' => "Create Drill Pipe",
+    'view-drillPipe' => "View Drill Pipe",
+    'create-drillCollar' => "Create Drill Collar",
+    'view-drillCollar' => "View Drill Collar",
+    'drillPipe' =>'Drill Pipe',
+    'drillCollar' =>'Drill Collar',
+    'heavyWeight' =>'Heavy Weight',
+];
