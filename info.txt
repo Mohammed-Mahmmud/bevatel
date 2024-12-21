@@ -1,0 +1,10 @@
+admin account
+email : mohamed@mail.com
+password  : 123456789
+
+author account
+email : omar@mail.com
+password : 12345678
+
+email : ahmed@mail.com
+password: 12345678

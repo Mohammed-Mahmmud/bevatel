@@ -525,6 +525,10 @@
 <?php $component = $__componentOriginal8a61cf4ce6144d9e2012fbc98db0155f; ?>
 <?php unset($__componentOriginal8a61cf4ce6144d9e2012fbc98db0155f); ?>
 <?php endif; ?>
+                        <div class="mt-5" style="font-size: 90%"><span class="text-danger">
+                                please upload images of all data related to excel file items
+                            </span>
+                        </div>
                     </div>
                     <div class="col-6">
                         <label for="file" class="form-label">Blogs Excel File</label>
@@ -550,6 +554,12 @@
 <?php $component = $__componentOriginal8a61cf4ce6144d9e2012fbc98db0155f; ?>
 <?php unset($__componentOriginal8a61cf4ce6144d9e2012fbc98db0155f); ?>
 <?php endif; ?>
+                        <div class="mt-5" style="font-size: 90%"><span class="text-danger">
+                                <?php echo e(ucwords('please insert images names inside the excel file')); ?>
+
+                                <a href="<?php echo e(asset('dashboard/test.xlsx')); ?>"><?php echo e(ucwords('Example of exel file')); ?></a>
+                            </span>
+                        </div>
                     </div>
                  <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>

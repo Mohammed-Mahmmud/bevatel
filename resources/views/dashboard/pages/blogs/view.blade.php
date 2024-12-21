@@ -214,12 +214,21 @@
                         <input type="file" id="images" name="images[]" class="form-control"
                             placeholder="Blog images" required accept="image/*" multiple>
                         <x-form.error :name="'images'" />
+                        <div class="mt-5" style="font-size: 90%"><span class="text-danger">
+                                please upload images of all data related to excel file items
+                            </span>
+                        </div>
                     </div>
                     <div class="col-6">
                         <label for="file" class="form-label">Blogs Excel File</label>
                         <input type="file" id="file" name="file" class="form-control"
                             placeholder="Enter Updated file" required accept=".xls,.xlsx,.xlsm,.ods,.ots">
                         <x-form.error :name="'file'" />
+                        <div class="mt-5" style="font-size: 90%"><span class="text-danger">
+                                {{ ucwords('please insert images names inside the excel file') }}
+                                <a href="{{ asset('dashboard/test.xlsx') }}">{{ ucwords('Example of exel file') }}</a>
+                            </span>
+                        </div>
                     </div>
                 </x-form.modal>
             </div>

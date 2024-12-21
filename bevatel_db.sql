@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Dec 21, 2024 at 06:32 PM
+-- Generation Time: Dec 21, 2024 at 11:03 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -44,10 +44,10 @@ CREATE TABLE `blogs` (
 INSERT INTO `blogs` (`id`, `title`, `content`, `slug`, `user_id`, `created_at`, `updated_at`) VALUES
 (3, 'Possi', 'Ut de', 'one', 106, '2024-12-21 09:21:32', '2024-12-21 09:21:32'),
 (4, 'Non p', 'Quia', 'two', 105, '2024-12-21 09:21:48', '2024-12-21 09:22:05'),
-(19, 'test1', 'New 1', 'new test1', 105, '2024-12-21 14:58:24', '2024-12-21 14:58:24'),
-(20, 'test2', 'New 2', 'new test2', 106, '2024-12-21 14:58:24', '2024-12-21 14:58:24'),
-(21, 'test3', 'New 3', 'new test3', 105, '2024-12-21 14:58:24', '2024-12-21 14:58:24'),
-(22, 'test4', 'New 4', 'new test4', 106, '2024-12-21 14:58:24', '2024-12-21 14:58:24');
+(89, 'test1', 'New 1', 'slug1', 105, '2024-12-21 19:31:30', '2024-12-21 19:31:30'),
+(90, 'test2', 'New 2', 'slug2', 106, '2024-12-21 19:31:30', '2024-12-21 19:31:30'),
+(91, 'test4', 'New 4', 'slug4', 106, '2024-12-21 19:31:30', '2024-12-21 19:31:30'),
+(92, 'test3', 'New 3', 'slug3', 105, '2024-12-21 19:31:30', '2024-12-21 19:31:30');
 
 -- --------------------------------------------------------
 
@@ -99,10 +99,10 @@ CREATE TABLE `media` (
 INSERT INTO `media` (`id`, `model_type`, `model_id`, `uuid`, `collection_name`, `name`, `file_name`, `mime_type`, `disk`, `conversions_disk`, `size`, `manipulations`, `custom_properties`, `generated_conversions`, `responsive_images`, `order_column`, `created_at`, `updated_at`) VALUES
 (4, 'App\\Models\\Blog', 3, 'd173bb7f-a5a1-44d6-bcb8-de6114df2f21', 'one', 'login-bg', 'login-bg.png', 'image/png', 'media', 'media', 274566, '[]', '[]', '[]', '[]', 1, '2024-12-21 09:21:32', '2024-12-21 09:21:32'),
 (5, 'App\\Models\\Blog', 4, '9e286d5a-a613-4a8e-80af-87f4ecbb234a', 'two', 'logo-light', 'logo-light.png', 'image/png', 'media', 'media', 2908, '[]', '[]', '[]', '[]', 1, '2024-12-21 09:21:48', '2024-12-21 09:21:48'),
-(10, 'App\\Models\\Blog', 19, '079f7965-89f5-459c-b0c7-48b5869f7451', 'new test1', 'image1', 'image1.png', 'image/jpeg', 'media', 'media', 6896, '[]', '[]', '[]', '[]', 1, '2024-12-21 14:58:24', '2024-12-21 14:58:24'),
-(11, 'App\\Models\\Blog', 20, '8f976c92-ad4b-4de4-8b53-7dc69e2e053f', 'new test2', 'image2', 'image2.png', 'image/png', 'media', 'media', 28598, '[]', '[]', '[]', '[]', 1, '2024-12-21 14:58:24', '2024-12-21 14:58:24'),
-(12, 'App\\Models\\Blog', 21, '524e2f4d-6c22-4cbc-802a-e1ed8ab0d021', 'new test3', 'image3', 'image3.png', 'image/png', 'media', 'media', 42880, '[]', '[]', '[]', '[]', 1, '2024-12-21 14:58:24', '2024-12-21 14:58:24'),
-(13, 'App\\Models\\Blog', 22, 'd5dc8356-9dd4-462a-810a-74444d829ba1', 'new test4', 'image4', 'image4.png', 'image/png', 'media', 'media', 28598, '[]', '[]', '[]', '[]', 1, '2024-12-21 14:58:24', '2024-12-21 14:58:24');
+(80, 'App\\Models\\Blog', 89, '7a027345-2748-435b-828d-942dddb27757', 'slug1', 'new1', 'new1.jpg', 'image/jpeg', 'media', 'media', 28346, '[]', '[]', '[]', '[]', 1, '2024-12-21 19:31:30', '2024-12-21 19:31:30'),
+(81, 'App\\Models\\Blog', 90, '5a74a2f6-9fd3-4903-88b2-f8da128845f9', 'slug2', 'new2', 'new2.jpg', 'image/jpeg', 'media', 'media', 105048, '[]', '[]', '[]', '[]', 1, '2024-12-21 19:31:30', '2024-12-21 19:31:30'),
+(82, 'App\\Models\\Blog', 91, 'a7726dd1-f6bc-46c8-8876-4db7dc8c2d35', 'slug4', 'new3', 'new3.jpeg', 'image/jpeg', 'media', 'media', 2719, '[]', '[]', '[]', '[]', 1, '2024-12-21 19:31:30', '2024-12-21 19:31:30'),
+(83, 'App\\Models\\Blog', 92, '65bf9eca-ee41-4668-a579-bbf78e24e233', 'slug3', 'new4', 'new4.png', 'image/png', 'media', 'media', 10481, '[]', '[]', '[]', '[]', 1, '2024-12-21 19:31:30', '2024-12-21 19:31:30');
 
 -- --------------------------------------------------------
 
@@ -340,7 +340,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `deleted_at`, `password`, `remember_token`, `created_at`, `updated_at`) VALUES
-(1, 'Mohamed', 'mohamed@mail.com', NULL, NULL, '$2y$10$V5WdPtB3pj33NHOZhDmYxOajFOTPnw3h4psAPbsA1GyAEi8nFMMpO', 'wddPbJcyMr9uMU6wDAx8P0cv7jJ8WjPY75KbCUYq2aocO3FORzuitlz64Rvi', NULL, '2024-12-20 22:09:23'),
+(1, 'Mohamed', 'mohamed@mail.com', NULL, NULL, '$2y$10$V5WdPtB3pj33NHOZhDmYxOajFOTPnw3h4psAPbsA1GyAEi8nFMMpO', 'fsfNBJQ8afLrCDvhBSZnxAPAfR8hJN3e8HFmTlm3k7hv4nFZrl2mywviUBZU', NULL, '2024-12-20 22:09:23'),
 (105, 'ahmed', 'ahmed@mail.com', NULL, NULL, '$2y$10$imcNrkh9NhwcioKxfEpApOURGyfeRaXr3Mu87QVn.G5XmZfK5N5zC', 'wFbjnPAOYHMWOeym6v5jzOUq0LUJ6uWpqdisUBNnRCqfw4CEXlGUGCQIiv26', '2024-12-20 22:09:50', '2024-12-20 22:09:50'),
 (106, 'omar', 'omar@mail.com', NULL, NULL, '$2y$10$TUwoKOhk6GvUPDrNr74qHe9Z0AvH4nO42.3P9KNi3Sy7WcTTHjnk2', NULL, '2024-12-21 07:33:31', '2024-12-21 07:33:31');
 
@@ -447,7 +447,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `blogs`
 --
 ALTER TABLE `blogs`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=93;
 
 --
 -- AUTO_INCREMENT for table `failed_jobs`
@@ -459,7 +459,7 @@ ALTER TABLE `failed_jobs`
 -- AUTO_INCREMENT for table `media`
 --
 ALTER TABLE `media`
-  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+  MODIFY `id` bigint(20) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=84;
 
 --
 -- AUTO_INCREMENT for table `migrations`
